@@ -1,0 +1,13 @@
+<app-home-button />
+<main>
+  <article>
+    <img src="{{officialArt}}" alt="{{altForOfficialArt}}">
+    <p>{{name}}</p>
+    <h1>Habilidades</h1>
+    <ul>
+      @for (ability of abilities; track ability.ability.name) {
+      <li>{{ability.ability.name}}</li>
+      }
+    </ul>
+  </article>
+</main>

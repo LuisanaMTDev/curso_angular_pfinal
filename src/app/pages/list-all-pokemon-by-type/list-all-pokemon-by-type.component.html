@@ -1,0 +1,7 @@
+<app-home-button />
+@for (type of types; track type.name) {
+<details>
+  <summary>{{type.name}}</summary>
+  <app-list-of-pokemon pokemonListUrl="{{type.url}}" />
+</details>
+}

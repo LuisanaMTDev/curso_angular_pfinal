@@ -1,0 +1,21 @@
+<!-- @if (logged) { -->
+<nav>
+  <app-home-button />
+  <button (click)="redirectToGetRandomPokemon()">Obtener un Pokémon aleatorio</button>
+  <button (click)="redirectToListAllPokemonByType()">Listar todos los tipos de Pokémon</button>
+  <button (click)="redirectToSearchPokemonByName()">Buscar Pokémon por nombre</button>
+</nav>
+<!-- } @else { -->
+<!-- <form [formGroup]="loginForm"> -->
+<!--   <div> -->
+<!--     <label for="username">Nombre de usuario: {{username}}</label> -->
+<!--     <input id="username" formControlName="username"> -->
+<!--   </div> -->
+<!--   <div> -->
+<!--     <label for="password">Contraseña: {{password}}</label> -->
+<!--     <input id="password" formControlName="password"> -->
+<!--   </div> -->
+<!---->
+<!--   <button type="submit" (click)="login()">Iniciar sección</button> -->
+<!-- </form> -->
+<!-- } -->

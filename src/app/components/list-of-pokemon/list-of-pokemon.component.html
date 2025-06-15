@@ -1,0 +1,6 @@
+<ul>
+  @for (pokemonInfo of listOfPokemon; track pokemonInfo.pokemon.name) {
+    <app-pokemon-art pokemonUrl="{{pokemonInfo.pokemon.url}}" />
+  <p>{{pokemonInfo.pokemon.name}}</p>
+  }
+</ul>

@@ -1,0 +1,19 @@
+main {
+  display: flex;
+  justify-content: center;
+}
+
+article {
+  background: #A9A9A9;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+li {
+  font-size: 1.1rem;
+}

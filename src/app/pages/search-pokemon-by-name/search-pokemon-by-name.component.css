@@ -1,0 +1,19 @@
+nav {
+  display: flex;
+}
+
+input {
+  font-size: 1rem;
+}
+
+article {
+  display: inline-block;
+  background-color: #A9A9A9;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 0.25rem;
+}
+
+p {
+  text-align: center;
+}
