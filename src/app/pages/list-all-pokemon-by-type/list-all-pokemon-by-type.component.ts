@@ -18,6 +18,7 @@ export class ListAllPokemonByTypeComponent {
   constructor(private pokemonService: PokemonService) { }
 
   types: Type[] = []
+  showPokemon = false
 
   // Todos los pokemons de un tipo cualquiera estan en la propiedad "pokemon"
   // de la url de cada tipo.
@@ -30,5 +31,9 @@ export class ListAllPokemonByTypeComponent {
 
   ngOnInit() {
     this.getAllTypesOfPokemon()
+  }
+
+  toggleShowPokemon() {
+    this.showPokemon = true
   }
 }

@@ -1,0 +1,13 @@
+summary {
+  font-size: 1.25rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+details {
+  display: grid;
+}
