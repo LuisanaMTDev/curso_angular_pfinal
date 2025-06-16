@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { PokemonService } from '../../services/pokemon.service';
 import { HomeButtonComponent } from "../../components/home-button/home-button.component";
+import { LogoutComponent } from "../../components/logout/logout.component";
 
 interface AbilityDetails {
     name: string,
@@ -15,7 +16,7 @@ interface Ability {
 
 @Component({
     selector: 'app-get-random-pokemon',
-    imports: [HomeButtonComponent],
+    imports: [HomeButtonComponent, LogoutComponent],
     templateUrl: './get-random-pokemon.component.html',
     styleUrl: './get-random-pokemon.component.css'
 })

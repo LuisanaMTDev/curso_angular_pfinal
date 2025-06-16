@@ -11,6 +11,6 @@ export class HomeButtonComponent {
     constructor(private router: Router) { }
 
     redirectToMain() {
-        this.router.navigate(['/'])
+        this.router.navigate([''])
     }
 }

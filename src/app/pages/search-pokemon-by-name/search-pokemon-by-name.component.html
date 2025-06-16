@@ -1,8 +1,11 @@
 <nav>
-<app-home-button />
-<input type="text" [(ngModel)]="name" required (keyup.enter)="getPokemon()">
+  <app-home-button />
+  <app-logout />
 </nav>
-<article>
-  <img src="{{pokemonOfficialArt}}">
-  <p>{{pokemonName}}</p>
-</article>
+<main>
+  <input type="text" [(ngModel)]="name" required (keyup.enter)="getPokemon()">
+  <article>
+    <img src="{{pokemonOfficialArt}}">
+    <p>{{pokemonName}}</p>
+  </article>
+</main>

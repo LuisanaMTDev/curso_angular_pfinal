@@ -1,4 +1,6 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { Location } from "@angular/common";
 
 @Component({
     selector: 'app-logout',
@@ -7,9 +9,16 @@ import { Component, EventEmitter, Output } from '@angular/core';
     styleUrl: './logout.component.css'
 })
 export class LogoutComponent {
-    @Output() newLogged = new EventEmitter<boolean>()
-
+    constructor(private router: Router, private location: Location) { }
     logout() {
-        this.newLogged.emit(false)
+        window.localStorage.removeItem('user')
+        if (this.location.path() == '') {
+            this.router.navigate(['/'])
+            window.location.reload()
+        } else {
+            this.router.navigate(['/'])
+            this.location.go('/')
+        }
+        console.log('logout')
     }
 }
