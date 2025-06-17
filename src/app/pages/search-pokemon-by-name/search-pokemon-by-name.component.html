@@ -5,7 +5,14 @@
 <main>
   <input type="text" [(ngModel)]="name" required (keyup.enter)="getPokemon()">
   <article>
-    <img src="{{pokemonOfficialArt}}">
+    <img src="{{pokemonOfficialArt}}" alt="{{altForOfficialArt}}">
     <p>{{pokemonName}}</p>
+    <p>Tipo: {{type}}</p>
+    <h1>Habilidades</h1>
+    <ul>
+      @for (ability of abilities; track ability.ability.name) {
+      <li>{{ability.ability.name}}</li>
+      }
+    </ul>
   </article>
 </main>
