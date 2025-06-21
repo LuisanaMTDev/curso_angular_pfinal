@@ -2,11 +2,33 @@ nav {
   display: flex;
   justify-content: center;
   gap: 1rem;
+}
 
-  button {
-    background: royalblue;
-    border: none;
-    border-radius: 0.25rem;
-    font-size: 1rem;
-  }
+button {
+  background: royalblue;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  padding-block: 0.25rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  max-width: fit-content;
+  justify-content: center;
+  margin-bottom: 0;
+  margin-inline: auto;
+  gap: 0.5rem;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label {
+  font-family: system-ui;
 }
